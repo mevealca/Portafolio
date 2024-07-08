@@ -1,0 +1,164 @@
+/* Esto es un reset general de los estilos del proyecto*/
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#F6F6F6;
+    --color-terciario:#22D4FD;
+    --color-hover:#272727;
+    --fuente-montserrat:"Montserrat",sans-serif;
+    --fuente-krona:"Krona One",sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /* height: 100vh;  esto ocupa el 100% vertical de nuestra pantalla*/
+    box-sizing: border-box;;
+  
+}
+
+.header{
+
+    padding: 2% 0 0 15%;
+
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__enlace{
+    font-family: var(--fuente-montserrat);
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding:6.5% 15%;
+    justify-content: space-between;
+    gap: 82px
+}
+.presentacion__contenido{
+    /* width: 615px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    /*Funciona para dar el espaciado entre elementos. Esta propiedad especifica en CSS
+     el tamaño de los espacios entre filas y columnas en diseños de cuadrícula, flex y 
+     de varias columnas. Su sintaxis es bastante simple y acepta uno o dos valores*/
+}
+
+.presentacion__contenido__titulo{
+    /* font-size: 36px; */
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+.titulo-destaque{
+    color:var(--color-terciario) ;
+}
+
+.presentacion__contenido__texto{
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+.presentacion__enlaces_lnk{
+    /* width: 378px; */
+    width: 50%;
+    /* background-color: var(--color-terciario); */
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "montserrat";
+    font-weight: 600;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario) ;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__enlaces_lnk:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion__enlace__subtitulos{
+
+    font-family: var(--fuente-krona);
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding: 24px;
+    text-align: center;
+    font-family:var(--fuente-montserrat) ;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width:1200px){
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .header{
+
+        padding:10%;
+    
+    }
+    .header__menu{
+        justify-content: center;
+    }
+     .presentacion__contenido{
+        width: auto;
+    }
+    /* .presentacion__imagen{
+        width: 100%;
+    }  */
+}
+
+/*Este media queri es la medida perfecta para establecer para tablet*/
+@media (max-width: 800px){
+
+}
+
+/*Este media queri es la medida perfecta para establecer para celular*/
+@media (max-width: 480px){
+
+}
